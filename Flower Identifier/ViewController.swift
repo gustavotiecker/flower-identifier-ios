@@ -8,13 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    let imagePicker = UIImagePickerController()
 
+    @IBOutlet weak var selectedImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
     }
-
-
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let userPickedImage = info[UIImagePickerController.InfoKey.editedImage]
+        
+        selectedImageView.image = userPickedImage as? UIImage
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func cameraButtonPressed(_ sender: UIBarButtonItem) {
+    }
+    
+    @IBAction func camRollButtonPressed(_ sender: UIBarButtonItem) {
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
 }
 

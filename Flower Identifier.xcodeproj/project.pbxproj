@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930E011A24D8B658006865AD /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 930E011924D8B658006865AD /* FlowerClassifier.mlmodel */; };
 		93EA54D624D4B38200FC34FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA54D524D4B38200FC34FC /* AppDelegate.swift */; };
 		93EA54D824D4B38200FC34FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA54D724D4B38200FC34FC /* SceneDelegate.swift */; };
 		93EA54DA24D4B38200FC34FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA54D924D4B38200FC34FC /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		930E011924D8B658006865AD /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
 		93EA54D224D4B38200FC34FC /* Flower Identifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flower Identifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EA54D524D4B38200FC34FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93EA54D724D4B38200FC34FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				93EA54DE24D4B38400FC34FC /* Assets.xcassets */,
 				93EA54E024D4B38400FC34FC /* LaunchScreen.storyboard */,
 				93EA54E324D4B38400FC34FC /* Info.plist */,
+				930E011924D8B658006865AD /* FlowerClassifier.mlmodel */,
 			);
 			path = "Flower Identifier";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930E011A24D8B658006865AD /* FlowerClassifier.mlmodel in Sources */,
 				93EA54DA24D4B38200FC34FC /* ViewController.swift in Sources */,
 				93EA54D624D4B38200FC34FC /* AppDelegate.swift in Sources */,
 				93EA54D824D4B38200FC34FC /* SceneDelegate.swift in Sources */,
