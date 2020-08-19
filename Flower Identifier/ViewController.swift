@@ -15,6 +15,7 @@ import SwiftyJSON
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let imagePicker = UIImagePickerController()
+    let wikipediaURl = "https://en.wikipedia.org/w/api.php"
 
     @IBOutlet weak var selectedImageView: UIImageView!
     
@@ -58,6 +59,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         } catch {
             print(error)
         }
+    }
+    
+    func requestInfo(flowerName: String) {
+        let parameters : [String:String] = [
+            "format" : "json",
+            "action" : "query",
+            "prop" : "extracts",
+            "exintro" : "",
+            "explaintext" : "",
+            "titles" : flowerName,
+            "indexpageidss" : "",
+            "redirects" : "1",
+        ]
     }
     
     @IBAction func cameraButtonPressed(_ sender: UIBarButtonItem) {
